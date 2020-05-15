@@ -1,0 +1,5 @@
+version: "Swift version 5.3-dev (LLVM 5a342fdfac, Swift 3a4fe71ab2)"
+options: "ce2b2d8201b424e2f517fe0f13963701"
+build_time: [1589497094, 200589000]
+inputs:
+  "/Users/ayush517/s4tfEnv/s4tfEnv/main.swift": [9223372036, 854775807]

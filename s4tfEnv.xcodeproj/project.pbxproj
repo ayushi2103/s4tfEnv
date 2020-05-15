@@ -3,11 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		3800B371246E017D00380C98 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800B370246E017D00380C98 /* main.swift */; };
+		38C4678D246EE0E300E99F40 /* benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4678C246EE0E300E99F40 /* benchmark.swift */; };
+		38C4678F246EE8E400E99F40 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4678E246EE8E400E99F40 /* Image.swift */; };
+		38D952B9246ED3190068D8E4 /* showImgeTensorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */; };
+		38EFDC11246EC7CD00B59022 /* ImageClassificationModels in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC10246EC7CD00B59022 /* ImageClassificationModels */; };
+		38EFDC13246EC7CD00B59022 /* VideoClassificationModels in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC12246EC7CD00B59022 /* VideoClassificationModels */; };
+		38EFDC15246EC7CD00B59022 /* MiniGo in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC14246EC7CD00B59022 /* MiniGo */; };
+		38EFDC17246EC7CD00B59022 /* ModelSupport in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC16246EC7CD00B59022 /* ModelSupport */; };
+		38EFDC19246EC7CD00B59022 /* Batcher in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC18246EC7CD00B59022 /* Batcher */; };
+		38EFDC1B246EC7CD00B59022 /* FastStyleTransfer in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC1A246EC7CD00B59022 /* FastStyleTransfer */; };
+		38EFDC1D246EC7CD00B59022 /* RecommendationModels in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC1C246EC7CD00B59022 /* RecommendationModels */; };
+		38EFDC1F246EC7CD00B59022 /* Datasets in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC1E246EC7CD00B59022 /* Datasets */; };
+		38EFDC21246EC7CD00B59022 /* TextModels in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC20246EC7CD00B59022 /* TextModels */; };
+		38EFDC23246EC9E700B59022 /* stb_image_benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38EFDC22246EC9E700B59022 /* stb_image_benchmark.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +38,12 @@
 /* Begin PBXFileReference section */
 		3800B36D246E017D00380C98 /* s4tfEnv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = s4tfEnv; sourceTree = BUILT_PRODUCTS_DIR; };
 		3800B370246E017D00380C98 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		3800B377246E018200380C98 /* s4tfEnv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = s4tfEnv.entitlements; sourceTree = "<group>"; };
+		38C4678C246EE0E300E99F40 /* benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmark.swift; sourceTree = "<group>"; };
+		38C4678E246EE8E400E99F40 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
+		38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showImgeTensorImage.swift; sourceTree = "<group>"; };
+		38D952BD246ED6700068D8E4 /* parrot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parrot.jpg; sourceTree = "<group>"; };
+		38EFDC22246EC9E700B59022 /* stb_image_benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stb_image_benchmark.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +51,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38EFDC15246EC7CD00B59022 /* MiniGo in Frameworks */,
+				38EFDC21246EC7CD00B59022 /* TextModels in Frameworks */,
+				38EFDC1F246EC7CD00B59022 /* Datasets in Frameworks */,
+				38EFDC13246EC7CD00B59022 /* VideoClassificationModels in Frameworks */,
+				38EFDC19246EC7CD00B59022 /* Batcher in Frameworks */,
+				38EFDC17246EC7CD00B59022 /* ModelSupport in Frameworks */,
+				38EFDC1D246EC7CD00B59022 /* RecommendationModels in Frameworks */,
+				38EFDC11246EC7CD00B59022 /* ImageClassificationModels in Frameworks */,
+				38EFDC1B246EC7CD00B59022 /* FastStyleTransfer in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -41,6 +69,7 @@
 		3800B364246E017D00380C98 = {
 			isa = PBXGroup;
 			children = (
+				38D952BC246ED6570068D8E4 /* projectImages */,
 				3800B36F246E017D00380C98 /* s4tfEnv */,
 				3800B36E246E017D00380C98 /* Products */,
 			);
@@ -57,9 +86,22 @@
 		3800B36F246E017D00380C98 /* s4tfEnv */ = {
 			isa = PBXGroup;
 			children = (
+				3800B377246E018200380C98 /* s4tfEnv.entitlements */,
 				3800B370246E017D00380C98 /* main.swift */,
+				38EFDC22246EC9E700B59022 /* stb_image_benchmark.swift */,
+				38C4678C246EE0E300E99F40 /* benchmark.swift */,
+				38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */,
+				38C4678E246EE8E400E99F40 /* Image.swift */,
 			);
 			path = s4tfEnv;
+			sourceTree = "<group>";
+		};
+		38D952BC246ED6570068D8E4 /* projectImages */ = {
+			isa = PBXGroup;
+			children = (
+				38D952BD246ED6700068D8E4 /* parrot.jpg */,
+			);
+			path = projectImages;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -78,6 +120,17 @@
 			dependencies = (
 			);
 			name = s4tfEnv;
+			packageProductDependencies = (
+				38EFDC10246EC7CD00B59022 /* ImageClassificationModels */,
+				38EFDC12246EC7CD00B59022 /* VideoClassificationModels */,
+				38EFDC14246EC7CD00B59022 /* MiniGo */,
+				38EFDC16246EC7CD00B59022 /* ModelSupport */,
+				38EFDC18246EC7CD00B59022 /* Batcher */,
+				38EFDC1A246EC7CD00B59022 /* FastStyleTransfer */,
+				38EFDC1C246EC7CD00B59022 /* RecommendationModels */,
+				38EFDC1E246EC7CD00B59022 /* Datasets */,
+				38EFDC20246EC7CD00B59022 /* TextModels */,
+			);
 			productName = s4tfEnv;
 			productReference = 3800B36D246E017D00380C98 /* s4tfEnv */;
 			productType = "com.apple.product-type.tool";
@@ -106,6 +159,9 @@
 				Base,
 			);
 			mainGroup = 3800B364246E017D00380C98;
+			packageReferences = (
+				38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */,
+			);
 			productRefGroup = 3800B36E246E017D00380C98 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -121,6 +177,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3800B371246E017D00380C98 /* main.swift in Sources */,
+				38D952B9246ED3190068D8E4 /* showImgeTensorImage.swift in Sources */,
+				38EFDC23246EC9E700B59022 /* stb_image_benchmark.swift in Sources */,
+				38C4678D246EE0E300E99F40 /* benchmark.swift in Sources */,
+				38C4678F246EE8E400E99F40 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,7 +303,9 @@
 		3800B375246E017D00380C98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = s4tfEnv/s4tfEnv.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = projectImages;
 				DEVELOPMENT_TEAM = B298T8UF7G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -254,7 +316,9 @@
 		3800B376246E017D00380C98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = s4tfEnv/s4tfEnv.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = projectImages;
 				DEVELOPMENT_TEAM = B298T8UF7G;
 				ENABLE_HARDENED_RUNTIME = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -284,6 +348,65 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/tensorflow/swift-models.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38EFDC10246EC7CD00B59022 /* ImageClassificationModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */;
+			productName = ImageClassificationModels;
+		};
+		38EFDC12246EC7CD00B59022 /* VideoClassificationModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */;
+			productName = VideoClassificationModels;
+		};
+		38EFDC14246EC7CD00B59022 /* MiniGo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */;
+			productName = MiniGo;
+		};
+		38EFDC16246EC7CD00B59022 /* ModelSupport */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */;
+			productName = ModelSupport;
+		};
+		38EFDC18246EC7CD00B59022 /* Batcher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */;
+			productName = Batcher;
+		};
+		38EFDC1A246EC7CD00B59022 /* FastStyleTransfer */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */;
+			productName = FastStyleTransfer;
+		};
+		38EFDC1C246EC7CD00B59022 /* RecommendationModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */;
+			productName = RecommendationModels;
+		};
+		38EFDC1E246EC7CD00B59022 /* Datasets */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */;
+			productName = Datasets;
+		};
+		38EFDC20246EC7CD00B59022 /* TextModels */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */;
+			productName = TextModels;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 3800B365246E017D00380C98 /* Project object */;
 }
