@@ -32,7 +32,7 @@ public func stbImageResizeOperation() {
 public func stbImageSaveOperation() {
     image = openImage(url: url)
     let expImage = Image.init(tensor: image)
-    let url = URL(string: "saved.jpeg")!
+    let url = URL(string: "/Users/ayush517/Downloads/stbSaved.jpeg")!
     expImage.save(to: url, format: .rgb, quality: 95)
 }
 

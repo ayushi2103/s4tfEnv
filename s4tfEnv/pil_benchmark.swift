@@ -23,7 +23,7 @@ public func pilResizeOperation() {
 
 public func pilSaveOperation() {
     var img = pilImage.open(path)
-    img = img.save("saved.jpeg")
+    img = img.save("/Users/ayush517/Downloads/pilSaved.jpeg")
 }
 
 public func pilTransposeOperation() {
