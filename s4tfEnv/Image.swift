@@ -7,7 +7,7 @@
 //
 
 import Foundation
-@_implementationOnly import STBImage
+import STBImage
 import TensorFlow
 import ModelSupport
 

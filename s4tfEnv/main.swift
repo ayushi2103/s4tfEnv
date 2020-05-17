@@ -26,11 +26,16 @@ let classifier = MLPClassifier()
 let prediction = classifier.prediction(for: input)
 print(prediction)
 
+let path = "/Users/ayush517/Downloads/parrot.jpg"
+var image: Tensor<UInt8>
+//var img
+
 //let dirPath = FileManager.default.homeDirectoryForCurrentUser
 //print(dirPath)
 
 //showTensorImage(image, title: "test")
-
-benchmark(stbImageResizeOperation)
-
-benchmark(stbImageSaveOperation)
+print("stb_image Operations")
+stbImageBenchmark()
+print(" ")
+print("PIL Operations")
+pilBenchmark()

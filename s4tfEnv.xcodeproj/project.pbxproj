@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3800903D24718B40007F95AF /* pil_benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800903C24718B40007F95AF /* pil_benchmark.swift */; };
 		3800B371246E017D00380C98 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800B370246E017D00380C98 /* main.swift */; };
 		38C4678D246EE0E300E99F40 /* benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4678C246EE0E300E99F40 /* benchmark.swift */; };
 		38C4678F246EE8E400E99F40 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4678E246EE8E400E99F40 /* Image.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3800903C24718B40007F95AF /* pil_benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pil_benchmark.swift; sourceTree = "<group>"; };
 		3800B36D246E017D00380C98 /* s4tfEnv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = s4tfEnv; sourceTree = BUILT_PRODUCTS_DIR; };
 		3800B370246E017D00380C98 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3800B377246E018200380C98 /* s4tfEnv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = s4tfEnv.entitlements; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 			children = (
 				3800B377246E018200380C98 /* s4tfEnv.entitlements */,
 				3800B370246E017D00380C98 /* main.swift */,
+				3800903C24718B40007F95AF /* pil_benchmark.swift */,
 				38EFDC22246EC9E700B59022 /* stb_image_benchmark.swift */,
 				38C4678C246EE0E300E99F40 /* benchmark.swift */,
 				38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */,
@@ -181,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3800B371246E017D00380C98 /* main.swift in Sources */,
+				3800903D24718B40007F95AF /* pil_benchmark.swift in Sources */,
 				38D952B9246ED3190068D8E4 /* showImgeTensorImage.swift in Sources */,
 				38EFDC23246EC9E700B59022 /* stb_image_benchmark.swift in Sources */,
 				38C4678D246EE0E300E99F40 /* benchmark.swift in Sources */,
