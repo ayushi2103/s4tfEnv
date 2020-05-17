@@ -102,7 +102,7 @@ Average Time : 0.0082209945
   
  ---------------------------   
    
-### scipy Operations  
+### skimage Operations  
 Resize Operation  
 Time : 3.280987754 seconds  
 Time : 0.169977318 seconds  
