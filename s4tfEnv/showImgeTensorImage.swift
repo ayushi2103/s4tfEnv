@@ -26,3 +26,16 @@ func showTensorImage<S> (_ image: Tensor<S>, title: String? = nil, pltAxes: Pyth
     if title != nil { axes.set_title(title!) }
     if pltAxes == nil { plt.show() }
 }
+
+func showNumpyImage (_ image: PythonObject) {
+    let modImage = image * (1.0 / 255)
+    plt.imshow(modImage)
+    plt.show()
+}
+
+func showScipyImage (_ image: PythonObject) {
+    var modImage = np.array(image, dtype: np.float32)
+    modImage = modImage * (1.0/255)
+    plt.imshow(modImage)
+    plt.show()
+}

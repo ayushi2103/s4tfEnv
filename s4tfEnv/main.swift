@@ -34,9 +34,12 @@ var img: PythonObject
 //let dirPath = FileManager.default.homeDirectoryForCurrentUser
 //print(dirPath)
 
-//showTensorImage(image, title: "test")
 print("stb_image Operations")
 stbImageBenchmark()
-print(" ")
+print(" --------------------------- ")
 print("PIL Operations")
 pilBenchmark()
+print(" --------------------------- ")
+print("scipy Operations")
+scipyBenchmark()
+print(" --------------------------- ")

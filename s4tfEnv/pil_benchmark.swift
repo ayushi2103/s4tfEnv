@@ -36,7 +36,7 @@ public func pilCropOperation() {
     let h = Float(img.size[0])! / 4
     let w = Float(img.size[1])! / 4
     let cropBorder = Int(Python.min(h, w))
-    img = pilImageOps.crop(img,  cropBorder)
+    img = pilImageOps.crop(img, cropBorder)
 }
 
 public func pilBenchmark() {

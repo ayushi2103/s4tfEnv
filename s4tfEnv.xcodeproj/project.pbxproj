@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3800903D24718B40007F95AF /* pil_benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800903C24718B40007F95AF /* pil_benchmark.swift */; };
 		3800B371246E017D00380C98 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800B370246E017D00380C98 /* main.swift */; };
+		380147F22471995E00BC9C7B /* scipy_benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 380147F12471995E00BC9C7B /* scipy_benchmark.swift */; };
 		38C4678D246EE0E300E99F40 /* benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4678C246EE0E300E99F40 /* benchmark.swift */; };
 		38C4678F246EE8E400E99F40 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4678E246EE8E400E99F40 /* Image.swift */; };
 		38C46792246F04C400E99F40 /* Benchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 38C46791246F04C400E99F40 /* Benchmark */; };
@@ -42,6 +43,7 @@
 		3800B36D246E017D00380C98 /* s4tfEnv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = s4tfEnv; sourceTree = BUILT_PRODUCTS_DIR; };
 		3800B370246E017D00380C98 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3800B377246E018200380C98 /* s4tfEnv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = s4tfEnv.entitlements; sourceTree = "<group>"; };
+		380147F12471995E00BC9C7B /* scipy_benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scipy_benchmark.swift; sourceTree = "<group>"; };
 		38C4678C246EE0E300E99F40 /* benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmark.swift; sourceTree = "<group>"; };
 		38C4678E246EE8E400E99F40 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showImgeTensorImage.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			children = (
 				3800B377246E018200380C98 /* s4tfEnv.entitlements */,
 				3800B370246E017D00380C98 /* main.swift */,
+				380147F12471995E00BC9C7B /* scipy_benchmark.swift */,
 				3800903C24718B40007F95AF /* pil_benchmark.swift */,
 				38EFDC22246EC9E700B59022 /* stb_image_benchmark.swift */,
 				38C4678C246EE0E300E99F40 /* benchmark.swift */,
@@ -185,6 +188,7 @@
 			files = (
 				3800B371246E017D00380C98 /* main.swift in Sources */,
 				3800903D24718B40007F95AF /* pil_benchmark.swift in Sources */,
+				380147F22471995E00BC9C7B /* scipy_benchmark.swift in Sources */,
 				38D952B9246ED3190068D8E4 /* showImgeTensorImage.swift in Sources */,
 				38EFDC23246EC9E700B59022 /* stb_image_benchmark.swift in Sources */,
 				38C4678D246EE0E300E99F40 /* benchmark.swift in Sources */,
