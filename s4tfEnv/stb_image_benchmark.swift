@@ -12,9 +12,6 @@ import Foundation
 import STBImage
 import PythonKit
 
-let np = Python.import("numpy")  // Make numpy available using np.
-let plt = Python.import("matplotlib.pyplot")
-
 let url = URL(string: path)!
 
 func openImage(url: URL) -> Tensor<UInt8> {

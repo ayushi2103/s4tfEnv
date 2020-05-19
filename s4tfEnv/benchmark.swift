@@ -21,7 +21,7 @@ func timer(_ body: () -> Void) -> Double {
     let nanoTime = end.uptimeNanoseconds - start.uptimeNanoseconds // <<<<< Difference in nano seconds (UInt64)
     let timeInterval = Double(nanoTime) / 1_000_000_000 // Technically could overflow for long running tests
 
-    print("Time : \(timeInterval) seconds")
+    //print("Time : \(timeInterval) seconds")
     return timeInterval
 }
 
@@ -29,13 +29,13 @@ func benchmark(_ body: () -> Void) {
     var maxTime:Double = 0
     var minTime:Double = 10
     var avgTime:Double = 0
-    for _ in 0..<10 {
+    for _ in 0..<400 {
         let time = timer(body)
         maxTime = max(maxTime, time)
         minTime = min(minTime, time)
-        avgTime += time/10
+        avgTime += time/400
     }
-    print("Minimum Time : \(minTime)")
-    print("Maximum Time : \(maxTime)")
-    print("Average Time : \(avgTime)")
+    print("Minimum Time : \(minTime) seconds")
+    print("Maximum Time : \(maxTime) seconds")
+    print("Average Time : \(avgTime) seconds")
 }

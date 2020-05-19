@@ -8,8 +8,11 @@
 
 
 import TensorFlow
-import PythonKit
+import Datasets
 import Foundation
+import STBImage
+import PythonKit
+import Benchmark
 
 struct MLPClassifier {
     var w1 = Tensor<Float>(repeating: 0.1, shape: [2, 4])
@@ -27,13 +30,57 @@ let classifier = MLPClassifier()
 let prediction = classifier.prediction(for: input)
 print(prediction)
 
+
+let np = Python.import("numpy")
+let plt = Python.import("matplotlib.pyplot")
 let path = "/Users/ayush517/Downloads/parrot.jpg"
 var image: Tensor<UInt8>
 var img: PythonObject
 
+
 //let dirPath = FileManager.default.homeDirectoryForCurrentUser
 //print(dirPath)
 
+print("Using google/swift-benchmark")
+print("")
+benchmark("stb_image Resize operation", settings: .iterations(400)) {
+    stbImageResizeOperation()
+}
+benchmark("stb_image Save operation", settings: .iterations(400)) {
+    stbImageSaveOperation()
+}
+
+benchmark("pil Resize Operation", settings: .iterations(400)) {
+    pilResizeOperation()
+}
+benchmark("pil Save Operation", settings: .iterations(400)) {
+    pilSaveOperation()
+}
+benchmark("pil Transpose Operation", settings: .iterations(400)) {
+    pilTransposeOperation()
+}
+benchmark("pil Crop Operation", settings: .iterations(400)) {
+    pilCropOperation()
+}
+
+benchmark("skimage Resize Operation", settings: .iterations(400)) {
+    skimageResizeOperation()
+}
+benchmark("skimage Save Operation", settings: .iterations(400)) {
+    skimageSaveOperation()
+}
+benchmark("skimage Transpose Operation", settings: .iterations(400)) {
+    skimageTransposeOperation()
+}
+benchmark("skimage Crop Operation", settings: .iterations(400)) {
+    skimageCropOperation()
+}
+
+Benchmark.main()
+
+print(" ------------------------------------------------------------------- ")
+print("Using own benchmark")
+print("")
 print("stb_image Operations")
 stbImageBenchmark()
 print(" --------------------------- ")

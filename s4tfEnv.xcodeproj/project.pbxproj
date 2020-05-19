@@ -11,8 +11,9 @@
 		3800B371246E017D00380C98 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800B370246E017D00380C98 /* main.swift */; };
 		38C4678D246EE0E300E99F40 /* benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4678C246EE0E300E99F40 /* benchmark.swift */; };
 		38C4678F246EE8E400E99F40 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4678E246EE8E400E99F40 /* Image.swift */; };
-		38C46792246F04C400E99F40 /* Benchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 38C46791246F04C400E99F40 /* Benchmark */; };
 		38D09A072471B1CD00B4A79B /* skimage_Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D09A062471B1CD00B4A79B /* skimage_Benchmark.swift */; };
+		38D26F2424743A1500EED04E /* Benchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 38D26F2324743A1500EED04E /* Benchmark */; };
+		38D26F282474479300EED04E /* googleBenchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D26F272474479300EED04E /* googleBenchmark.swift */; };
 		38D952B9246ED3190068D8E4 /* showImgeTensorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */; };
 		38EFDC11246EC7CD00B59022 /* ImageClassificationModels in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC10246EC7CD00B59022 /* ImageClassificationModels */; };
 		38EFDC13246EC7CD00B59022 /* VideoClassificationModels in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC12246EC7CD00B59022 /* VideoClassificationModels */; };
@@ -46,6 +47,7 @@
 		38C4678C246EE0E300E99F40 /* benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmark.swift; sourceTree = "<group>"; };
 		38C4678E246EE8E400E99F40 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		38D09A062471B1CD00B4A79B /* skimage_Benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skimage_Benchmark.swift; sourceTree = "<group>"; };
+		38D26F272474479300EED04E /* googleBenchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleBenchmark.swift; sourceTree = "<group>"; };
 		38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showImgeTensorImage.swift; sourceTree = "<group>"; };
 		38D952BD246ED6700068D8E4 /* parrot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parrot.jpg; sourceTree = "<group>"; };
 		38EFDC22246EC9E700B59022 /* stb_image_benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stb_image_benchmark.swift; sourceTree = "<group>"; };
@@ -62,7 +64,7 @@
 				38EFDC13246EC7CD00B59022 /* VideoClassificationModels in Frameworks */,
 				38EFDC19246EC7CD00B59022 /* Batcher in Frameworks */,
 				38EFDC17246EC7CD00B59022 /* ModelSupport in Frameworks */,
-				38C46792246F04C400E99F40 /* Benchmark in Frameworks */,
+				38D26F2424743A1500EED04E /* Benchmark in Frameworks */,
 				38EFDC1D246EC7CD00B59022 /* RecommendationModels in Frameworks */,
 				38EFDC11246EC7CD00B59022 /* ImageClassificationModels in Frameworks */,
 				38EFDC1B246EC7CD00B59022 /* FastStyleTransfer in Frameworks */,
@@ -100,6 +102,7 @@
 				38C4678C246EE0E300E99F40 /* benchmark.swift */,
 				38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */,
 				38C4678E246EE8E400E99F40 /* Image.swift */,
+				38D26F272474479300EED04E /* googleBenchmark.swift */,
 			);
 			path = s4tfEnv;
 			sourceTree = "<group>";
@@ -138,7 +141,7 @@
 				38EFDC1C246EC7CD00B59022 /* RecommendationModels */,
 				38EFDC1E246EC7CD00B59022 /* Datasets */,
 				38EFDC20246EC7CD00B59022 /* TextModels */,
-				38C46791246F04C400E99F40 /* Benchmark */,
+				38D26F2324743A1500EED04E /* Benchmark */,
 			);
 			productName = s4tfEnv;
 			productReference = 3800B36D246E017D00380C98 /* s4tfEnv */;
@@ -170,7 +173,7 @@
 			mainGroup = 3800B364246E017D00380C98;
 			packageReferences = (
 				38EFDC0F246EC7CD00B59022 /* XCRemoteSwiftPackageReference "swift-models" */,
-				38C46790246F04C400E99F40 /* XCRemoteSwiftPackageReference "swift-benchmark" */,
+				38D26F2224743A1500EED04E /* XCRemoteSwiftPackageReference "swift-benchmark" */,
 			);
 			productRefGroup = 3800B36E246E017D00380C98 /* Products */;
 			projectDirPath = "";
@@ -186,6 +189,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38D26F282474479300EED04E /* googleBenchmark.swift in Sources */,
 				3800B371246E017D00380C98 /* main.swift in Sources */,
 				3800903D24718B40007F95AF /* pil_benchmark.swift in Sources */,
 				38D952B9246ED3190068D8E4 /* showImgeTensorImage.swift in Sources */,
@@ -238,7 +242,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -255,7 +259,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 			};
 			name = Debug;
 		};
@@ -362,7 +367,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		38C46790246F04C400E99F40 /* XCRemoteSwiftPackageReference "swift-benchmark" */ = {
+		38D26F2224743A1500EED04E /* XCRemoteSwiftPackageReference "swift-benchmark" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/google/swift-benchmark";
 			requirement = {
@@ -381,9 +386,9 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		38C46791246F04C400E99F40 /* Benchmark */ = {
+		38D26F2324743A1500EED04E /* Benchmark */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 38C46790246F04C400E99F40 /* XCRemoteSwiftPackageReference "swift-benchmark" */;
+			package = 38D26F2224743A1500EED04E /* XCRemoteSwiftPackageReference "swift-benchmark" */;
 			productName = Benchmark;
 		};
 		38EFDC10246EC7CD00B59022 /* ImageClassificationModels */ = {
