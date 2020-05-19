@@ -69,6 +69,17 @@ Average Time : 0.011091903940000002 seconds
  ---------------------------   
 
 ## Using google/swift-benchmark
+running stb_image Resize operation... done! (2209.71 ms)  
+running stb_image Save operation... done! (1801.10 ms)  
+running pil Resize Operation... done! (1571.84 ms)  
+running pil Save Operation... done! (1602.40 ms)  
+running pil Transpose Operation... done! (2336.61 ms)  
+running pil Crop Operation... done! (2236.52 ms)  
+running skimage Resize Operation... done! (4321.81 ms)  
+running skimage Save Operation... done! (1844.57 ms)  
+running skimage Transpose Operation... done! (2198.74 ms)  
+running skimage Crop Operation... done! (1490.27 ms)  
+
 
 | name                        | time           | std         | iterations  
 | ----------------------------|:--------------:|------------:|-------------:
