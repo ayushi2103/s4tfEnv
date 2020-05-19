@@ -17,11 +17,11 @@ let url = URL(string: path)!
 func openImage(url: URL) -> Tensor<UInt8> {
     let loadedFile = _Raw.readFile(filename: StringTensor(url.absoluteString))
     return _Raw.decodeJpeg(contents: loadedFile, channels: 3, dctMethod: "")
-    
 }
 
 public func stbImageResizeOperation() {
     image = openImage(url: url)
+    //var expImage = Image.init(jpeg: url, byteOrdering: .rgb)
     var expImage = Image.init(tensor: image)
     expImage = expImage.resized(to: (32, 32))
 }

@@ -37,7 +37,6 @@ let path = "/Users/ayush517/Downloads/parrot.jpg"
 var image: Tensor<UInt8>
 var img: PythonObject
 
-
 //let dirPath = FileManager.default.homeDirectoryForCurrentUser
 //print(dirPath)
 

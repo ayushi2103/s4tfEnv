@@ -7,9 +7,9 @@
 //
 
 import Foundation
-import STBImage
 import TensorFlow
 import ModelSupport
+import STBImage
 
 public struct Image {
     public enum ByteOrdering {
@@ -140,3 +140,4 @@ public func saveImage(
     let outputURL = URL(fileURLWithPath: "\(directory)\(name).jpg")
     resizedImage.save(to: outputURL, format: format, quality: quality)
 }
+

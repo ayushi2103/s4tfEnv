@@ -9,11 +9,10 @@
 /* Begin PBXBuildFile section */
 		3800903D24718B40007F95AF /* pil_benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800903C24718B40007F95AF /* pil_benchmark.swift */; };
 		3800B371246E017D00380C98 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3800B370246E017D00380C98 /* main.swift */; };
+		3842F56C24745C4800181201 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3842F56B24745C4800181201 /* Image.swift */; };
 		38C4678D246EE0E300E99F40 /* benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4678C246EE0E300E99F40 /* benchmark.swift */; };
-		38C4678F246EE8E400E99F40 /* Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38C4678E246EE8E400E99F40 /* Image.swift */; };
 		38D09A072471B1CD00B4A79B /* skimage_Benchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D09A062471B1CD00B4A79B /* skimage_Benchmark.swift */; };
 		38D26F2424743A1500EED04E /* Benchmark in Frameworks */ = {isa = PBXBuildFile; productRef = 38D26F2324743A1500EED04E /* Benchmark */; };
-		38D26F282474479300EED04E /* googleBenchmark.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D26F272474479300EED04E /* googleBenchmark.swift */; };
 		38D952B9246ED3190068D8E4 /* showImgeTensorImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */; };
 		38EFDC11246EC7CD00B59022 /* ImageClassificationModels in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC10246EC7CD00B59022 /* ImageClassificationModels */; };
 		38EFDC13246EC7CD00B59022 /* VideoClassificationModels in Frameworks */ = {isa = PBXBuildFile; productRef = 38EFDC12246EC7CD00B59022 /* VideoClassificationModels */; };
@@ -44,10 +43,9 @@
 		3800B36D246E017D00380C98 /* s4tfEnv */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = s4tfEnv; sourceTree = BUILT_PRODUCTS_DIR; };
 		3800B370246E017D00380C98 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		3800B377246E018200380C98 /* s4tfEnv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = s4tfEnv.entitlements; sourceTree = "<group>"; };
+		3842F56B24745C4800181201 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		38C4678C246EE0E300E99F40 /* benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = benchmark.swift; sourceTree = "<group>"; };
-		38C4678E246EE8E400E99F40 /* Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Image.swift; sourceTree = "<group>"; };
 		38D09A062471B1CD00B4A79B /* skimage_Benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = skimage_Benchmark.swift; sourceTree = "<group>"; };
-		38D26F272474479300EED04E /* googleBenchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = googleBenchmark.swift; sourceTree = "<group>"; };
 		38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showImgeTensorImage.swift; sourceTree = "<group>"; };
 		38D952BD246ED6700068D8E4 /* parrot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = parrot.jpg; sourceTree = "<group>"; };
 		38EFDC22246EC9E700B59022 /* stb_image_benchmark.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = stb_image_benchmark.swift; sourceTree = "<group>"; };
@@ -101,8 +99,7 @@
 				38EFDC22246EC9E700B59022 /* stb_image_benchmark.swift */,
 				38C4678C246EE0E300E99F40 /* benchmark.swift */,
 				38D952B8246ED3190068D8E4 /* showImgeTensorImage.swift */,
-				38C4678E246EE8E400E99F40 /* Image.swift */,
-				38D26F272474479300EED04E /* googleBenchmark.swift */,
+				3842F56B24745C4800181201 /* Image.swift */,
 			);
 			path = s4tfEnv;
 			sourceTree = "<group>";
@@ -159,6 +156,7 @@
 				TargetAttributes = {
 					3800B36C246E017D00380C98 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -189,14 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38D26F282474479300EED04E /* googleBenchmark.swift in Sources */,
+				3842F56C24745C4800181201 /* Image.swift in Sources */,
 				3800B371246E017D00380C98 /* main.swift in Sources */,
 				3800903D24718B40007F95AF /* pil_benchmark.swift in Sources */,
 				38D952B9246ED3190068D8E4 /* showImgeTensorImage.swift in Sources */,
 				38EFDC23246EC9E700B59022 /* stb_image_benchmark.swift in Sources */,
 				38D09A072471B1CD00B4A79B /* skimage_Benchmark.swift in Sources */,
 				38C4678D246EE0E300E99F40 /* benchmark.swift in Sources */,
-				38C4678F246EE8E400E99F40 /* Image.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -320,11 +317,17 @@
 		3800B375246E017D00380C98 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = s4tfEnv/s4tfEnv.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = projectImages;
 				DEVELOPMENT_TEAM = B298T8UF7G;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
@@ -333,11 +336,17 @@
 		3800B376246E017D00380C98 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = s4tfEnv/s4tfEnv.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = projectImages;
 				DEVELOPMENT_TEAM = B298T8UF7G;
 				ENABLE_HARDENED_RUNTIME = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 			};
