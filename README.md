@@ -5,11 +5,9 @@ Development Environment for S4TF Libraries and Benchmarks
 ## Benchmark Results
 
 Image: https://live.staticflickr.com/2842/11335865374_0b202e2dc6_o_d.jpg  
-
+Number of Cycles for each operation: 400  
 
 ## From my own code  
-
-Number of Cycles for each operation: 400  
 
 ### stb_image Operations  
 Resize Operation  
@@ -69,27 +67,28 @@ Average Time : 0.011091903940000002 seconds
  ---------------------------   
 
 ## Using google/swift-benchmark
-running stb_image Resize operation... done! (2209.71 ms)  
-running stb_image Save operation... done! (1801.10 ms)  
-running pil Resize Operation... done! (1571.84 ms)  
-running pil Save Operation... done! (1602.40 ms)  
-running pil Transpose Operation... done! (2336.61 ms)  
-running pil Crop Operation... done! (2236.52 ms)  
-running skimage Resize Operation... done! (4321.81 ms)  
-running skimage Save Operation... done! (1844.57 ms)  
-running skimage Transpose Operation... done! (2198.74 ms)  
-running skimage Crop Operation... done! (1490.27 ms)  
 
+running stb_image Resize operation... done! (2642.45 ms)  
+running stb_image Save operation... done! (12839.53 ms)  
+running pil Resize Operation... done! (4511.93 ms)  
+running pil Save Operation... done! (8495.85 ms)  
+running pil Transpose Operation... done! (3573.58 ms)  
+running pil Crop Operation... done! (3156.75 ms)  
+running skimage Resize Operation... done! (69499.99 ms)  
+running skimage Save Operation... done! (16604.98 ms)  
+running skimage Transpose Operation... done! (27018.29 ms)  
+running skimage Crop Operation... done! (4406.51 ms)  
+      
 
 | name                        | time           | std         | iterations  
 | ----------------------------|:--------------:|------------:|-------------:
-| stb_image Resize operation  | 6752307.5 ns   | ±  16.43 %  | 208         
-| stb_image Save operation    | 31838112.0 ns  | ±   2.73 %  | 45          
-| pil Resize Operation        | 11185910.0 ns  | ±   5.90 %  | 125         
-| pil Save Operation          | 20583252.0 ns  | ±   3.75 %  | 66          
-| pil Transpose Operation     | 8551030.0 ns   | ±   7.44 %  | 155         
-| pil Crop Operation          | 7604102.0 ns   | ±   3.79 %  | 177         
-| skimage Resize Operation    | 162722545.0 ns | ±   1.30 %  | 9           
-| skimage Save Operation      | 40678974.5 ns  | ±   2.62 %  | 34          
-| skimage Transpose Operation | 70597909.0 ns  | ±   2.25 %  | 20          
-| skimage Crop Operation      | 10981257.0 ns  | ±   4.64 %  | 123        
+| stb_image Resize operation  | 6510404.0 ns   |  ±   8.65 % | 400         
+| stb_image Save operation    | 31759828.5 ns  |  ±  12.99 % | 400         
+| pil Resize Operation        | 11044071.5 ns  |  ±  17.73 % | 400         
+| pil Save Operation          | 21037174.5 ns  |  ±   5.80 % | 400         
+| pil Transpose Operation     | 8759875.0 ns   |  ±   8.80 % | 400         
+| pil Crop Operation          | 7831765.0 ns   |  ±   6.70 % | 400         
+| skimage Resize Operation    | 167246633.5 ns |  ±  70.92 % | 400         
+| skimage Save Operation      | 41291975.0 ns  |  ±   4.33 % | 400         
+| skimage Transpose Operation | 67278892.0 ns  |  ±   4.31 % | 400         
+| skimage Crop Operation      | 10902374.0 ns  |  ±   6.31 % | 400         
