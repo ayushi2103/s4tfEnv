@@ -5,7 +5,11 @@ Development Environment for S4TF Libraries and Benchmarks
 ## Benchmark Results
 
 Image: https://live.staticflickr.com/2842/11335865374_0b202e2dc6_o_d.jpg  
-Number of Cycles for each operation: 400
+
+
+## From my own code  
+
+Number of Cycles for each operation: 400  
 
 ### stb_image Operations  
 Resize Operation  
@@ -63,3 +67,18 @@ Maximum Time : 0.015141088 seconds
 Average Time : 0.011091903940000002 seconds  
     
  ---------------------------   
+
+## Using google/swift-benchmark
+
+| name                        | time           | std         | iterations  
+| ----------------------------|:--------------:|------------:|-------------:
+| stb_image Resize operation  | 6752307.5 ns   | ±  16.43 %  | 208         
+| stb_image Save operation    | 31838112.0 ns  | ±   2.73 %  | 45          
+| pil Resize Operation        | 11185910.0 ns  | ±   5.90 %  | 125         
+| pil Save Operation          | 20583252.0 ns  | ±   3.75 %  | 66          
+| pil Transpose Operation     | 8551030.0 ns   | ±   7.44 %  | 155         
+| pil Crop Operation          | 7604102.0 ns   | ±   3.79 %  | 177         
+| skimage Resize Operation    | 162722545.0 ns | ±   1.30 %  | 9           
+| skimage Save Operation      | 40678974.5 ns  | ±   2.62 %  | 34          
+| skimage Transpose Operation | 70597909.0 ns  | ±   2.25 %  | 20          
+| skimage Crop Operation      | 10981257.0 ns  | ±   4.64 %  | 123        
