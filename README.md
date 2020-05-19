@@ -7,7 +7,7 @@ Development Environment for S4TF Libraries and Benchmarks
 Image: https://live.staticflickr.com/2842/11335865374_0b202e2dc6_o_d.jpg
 
 ### stb_image Operations
-Resize Operation. 
+Resize Operation  
 Time : 0.010568676 seconds  
 Time : 0.007232109 seconds  
 Time : 0.006302905 seconds  
