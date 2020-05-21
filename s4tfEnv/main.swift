@@ -30,35 +30,32 @@ let classifier = MLPClassifier()
 let prediction = classifier.prediction(for: input)
 print(prediction)
 
-
 let np = Python.import("numpy")
 let plt = Python.import("matplotlib.pyplot")
-let path = "/Users/ayush517/Downloads/parrot.jpg"
-var image: Tensor<UInt8>
-var img: PythonObject
+let path = "/Users/ayush517/Downloads/tiger.jpg"
 
 //let dirPath = FileManager.default.homeDirectoryForCurrentUser
 //print(dirPath)
 
 print("Using google/swift-benchmark")
 print("")
-benchmark("stb_image Resize operation", settings: .iterations(400)) {
+benchmark("stb_image Resize operation") {
     stbImageResizeOperation()
 }
-benchmark("stb_image Save operation", settings: .iterations(400)) {
+benchmark("stb_image Save operation") {
     stbImageSaveOperation()
 }
 
-benchmark("pil Resize Operation", settings: .iterations(400)) {
+benchmark("pil Resize Operation") {
     pilResizeOperation()
 }
-benchmark("pil Save Operation", settings: .iterations(400)) {
+benchmark("pil Save Operation") {
     pilSaveOperation()
 }
-benchmark("pil Transpose Operation", settings: .iterations(400)) {
+benchmark("pil Transpose Operation") {
     pilTransposeOperation()
 }
-benchmark("pil Crop Operation", settings: .iterations(400)) {
+benchmark("pil Crop Operation") {
     pilCropOperation()
 }
 
@@ -89,3 +86,4 @@ print(" --------------------------- ")
 print("skimage Operations")
 skimageBenchmark()
 print(" --------------------------- ")
+

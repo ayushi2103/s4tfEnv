@@ -13,6 +13,7 @@ import STBImage
 import PythonKit
 
 let url = URL(string: path)!
+let expImage = Image.init(jpeg: url, byteOrdering: .rgb)
 
 func openImage(url: URL) -> Tensor<UInt8> {
     let loadedFile = _Raw.readFile(filename: StringTensor(url.absoluteString))
@@ -20,23 +21,22 @@ func openImage(url: URL) -> Tensor<UInt8> {
 }
 
 public func stbImageResizeOperation() {
-    image = openImage(url: url)
-    //var expImage = Image.init(jpeg: url, byteOrdering: .rgb)
-    var expImage = Image.init(tensor: image)
-    expImage = expImage.resized(to: (32, 32))
+    //image = openImage(url: url)
+    //var expImage = Image.init(tensor: image)
+    let _ = expImage.resized(to: (32, 32))
 }
 
 public func stbImageSaveOperation() {
-    image = openImage(url: url)
-    let expImage = Image.init(tensor: image)
+    //image = openImage(url: url)
+    //let expImage = Image.init(tensor: image)
     let url = URL(string: "/Users/ayush517/Downloads/stbSaved.jpeg")!
     expImage.save(to: url, format: .rgb, quality: 95)
 }
 
 public func stbImageBenchmark() {
     print("Resize Operation")
-    benchmark(stbImageResizeOperation)
+    benchmark(stbImageResizeOperation, iterations: 4700)
     print(" ")
     print("Save Operation")
-    benchmark(stbImageSaveOperation)
+    benchmark(stbImageSaveOperation, iterations: 400)
 }

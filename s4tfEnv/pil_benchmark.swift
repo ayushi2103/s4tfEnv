@@ -16,39 +16,37 @@ let pil = Python.import("PIL")
 let pilImage = Python.import("PIL.Image")
 let pilImageOps = Python.import("PIL.ImageOps")
 
+let pilImg = pilImage.open(path)
+
 public func pilResizeOperation() {
-    img = pilImage.open(path)
-    img = img.resize([32, 32])
+    let _ = pilImg.resize([32, 32])
 }
 
 public func pilSaveOperation() {
-    img = pilImage.open(path)
-    img = img.save("/Users/ayush517/Downloads/pilSaved.jpeg")
+    let _ = pilImg.save("/Users/ayush517/Downloads/pilSaved.jpeg")
 }
 
 public func pilTransposeOperation() {
-    img = pilImage.open(path)
-    img = img.transpose(pilImage.TRANSPOSE)
+    let _ = pilImg.transpose(pilImage.TRANSPOSE)
 }
 
 public func pilCropOperation() {
-    img = pilImage.open(path)
-    let h = Float(img.size[0])! / 4
-    let w = Float(img.size[1])! / 4
+    let h = Float(pilImg.size[0])! / 4
+    let w = Float(pilImg.size[1])! / 4
     let cropBorder = Int(Python.min(h, w))
-    img = pilImageOps.crop(img, cropBorder)
+    let _ = pilImageOps.crop(pilImg, cropBorder)
 }
 
 public func pilBenchmark() {
     print("Resize Operation")
-    benchmark(pilResizeOperation)
+    benchmark(pilResizeOperation, iterations: 800)
     print(" ")
     print("Save Operation")
-    benchmark(pilSaveOperation)
+    benchmark(pilSaveOperation, iterations: 400)
     print(" ")
     print("Transpose Operation")
-    benchmark(pilTransposeOperation)
+    benchmark(pilTransposeOperation, iterations: 6000)
     print(" ")
     print("Crop Operation")
-    benchmark(pilCropOperation)
+    benchmark(pilCropOperation, iterations: 325000)
 }

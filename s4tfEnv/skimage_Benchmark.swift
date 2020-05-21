@@ -17,40 +17,38 @@ let skio = Python.import("skimage.io")
 let sktransform = Python.import("skimage.transform")
 let skutil = Python.import("skimage.util")
 
+let skImg:PythonObject = skio.imread(path)
+
 public func skimageResizeOperation() {
-    img = skio.imread(path)
-    img = sktransform.resize(img, [32, 32])
+    let _ = sktransform.resize(skImg, [32, 32])
 }
 
 public func skimageSaveOperation() {
-    img = skio.imread(path)
     let fname = "/Users/ayush517/Downloads/skimageSaved.jpeg"
-    img = skio.imsave(fname, img)
+    let _ = skio.imsave(fname, skImg)
 }
 
 
 public func skimageTransposeOperation() {
-    img = skio.imread(path)
-    img = sktransform.rotate(img, 90)
+    let _ = sktransform.rotate(skImg, 90)
 }
 
 public func skimageCropOperation() {
-    img = skio.imread(path)
-    let h = Float(img.shape[0])! / 4
-    let w = Float(img.shape[1])! / 4
-    img = skutil.crop(img, [[h, h], [w, w], [0, 0]])
+    let h = Float(skImg.shape[0])! / 4
+    let w = Float(skImg.shape[1])! / 4
+    let _ = skutil.crop(skImg, [[h, h], [w, w], [0, 0]])
 }
 
 public func skimageBenchmark() {
     print("Resize Operation")
-    benchmark(skimageResizeOperation)
+    benchmark(skimageResizeOperation, iterations: 400)
     print(" ")
     print("Save Operation")
-    benchmark(skimageSaveOperation)
+    benchmark(skimageSaveOperation, iterations: 400)
     print(" ")
     print("Transpose Operation")
-    benchmark(skimageTransposeOperation)
+    benchmark(skimageTransposeOperation, iterations: 400)
     print(" ")
     print("Crop Operation")
-    benchmark(skimageCropOperation)
+    benchmark(skimageCropOperation, iterations: 400)
 }
